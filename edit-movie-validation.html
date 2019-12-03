@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+	<script src="node_modules\jquery\dist\jquery.min.js"></script>
+	<script src="node_modules\popper.js\dist\popper.min.js"></script>
+	<script src="node_modules\bootstrap\js\dist\alert.js"></script>
+	<script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css\style.css">
+	<script src="edit-movie-validation.js"></script> 
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark navbar">
+		<a class="navbar-brand" href="#"><i class="material-icons navbar-brand-icon">local_movies</i>movieCruiser</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="movie-list-admin.html">Movies <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-account" href="#"><i class="material-icons nav-account-icon">perm_identity</i>Admin</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html">Logout</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container-fluid px-5 py-5">
+		<h3>Edit Movie</h3>
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 mt-2">
+				<div class="form-group">
+					<label for="movieName">Name:</label>
+					<input type="text" class="form-control" id="movieName">
+					<div class="error-box">
+						<small class="text text-danger">Movie Name is required</small>
+						<small class="text text-danger">Movie Name cannot exceed 200 characters</small>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-12">
+				<div class="form-group">
+					<label for="movieBO">Box Office:</label>
+					<input type="text" class="form-control" id="movieBO">
+					<div class="error-box">
+						<small class="text text-danger">Box Office is required</small>
+						<small class="text text-danger">Box Office can control only number</small>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-12">
+				<div class="form-group">
+					<label for="movieDOL">Date of Launch:</label>
+					<input type="date" class="form-control" id="movieDOL">
+					<div class="error-box">
+						<small class="text text-danger">Incorrect date format</small>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-12">
+				<div class="form-group">
+					<label for="movieCategory">Genre:</label>
+					<select name="categories" id="movieCategory" class="form-control">
+						<option selected> Select a Genre</option>
+                        <option value="Starter">Science Fiction</option>
+                        <option value="Main Course">Superhero</option>
+                        <option value="Dessert">Romance</option>
+					</select>
+					<div class="error-box">
+						<small class="text text-danger">Select atleast one genre</small>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-12 col-sm-12">
+				<div class="form-group">
+					<label for="movieActive">Active:</label>
+					<div>
+						<input type="radio" value="Yes" id="movieActive" class="active-status" name="movieActive">Yes</input>
+						<input type="radio" value="No" id="movieActive" class="active-status" name="movieActive">No</input>
+					</div>
+					<div class="error-box">
+						<small class="text text-danger">Select running status</small>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12 mt-2">
+				<div class="form-group">
+					<input type="checkbox" class="free-del-status" id="movieTeaser">
+					<label for="movieTeaser">Has Teaser</label>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12 mt-2">
+				<div class="form-group">
+					<button type="submit" onclick="validate()" class="btn add-to-cart">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="sticky-footer" class="sticky footer py-3">
+		<div class="container-fluid">
+			Copyright &copy; 2019
+		</div>
+	</footer>
+</body>
+</html>

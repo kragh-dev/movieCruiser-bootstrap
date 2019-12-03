@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css\style.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark navbar">
+		<a class="navbar-brand" href="#"><i class="material-icons navbar-brand-icon">local_movies</i>movieCruiser</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="movie-list.html">Movies<span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="login.html">Login</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="signup.html">Signup</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="jumbotron container-fluid search-container">
+		<h2>FIND MOVIES<h2>
+		<div class="input-group-prepend my-3">
+            <span class="input-group-text"><i class="material-icons">local_movies</i></span>
+            <input type="text" placeholder="Search Movies" class="form-control">
+        </div>
+	</div>
+	<div class="conatiner-fluid my-4 mx-4">
+		<div class="row mb-4">
+			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+				<div class="card">
+					<img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1eOdQA-AuDXO1OVhs-YZZp2E5pMg7EkqOanLbNvBPJayGCVOg">
+					<div class="container-fluid px-3 pt-3">
+						<b class="card-title">Avatar</b>
+						<b class="card-title float-right item-price">$2,787,965,087</b>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<small class="card-text">Science Fiction</small>
+						<small class="card-text free-delivery float-right"><i class="material-icons free-del-truck">play_circle_filled</i><span class="badge free-del-badge">TEASER</span></small>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<button type="button" onclick="window.location.href='add-to-fav-login.html'" class="btn add-to-cart float-right"><i class="material-icons add-to-cart-icon">favorite_border</i>  Add to favorites</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+				<div class="card">
+					<img class="card-img-top" src="https://external-preview.redd.it/5bWjD2Qw0x33gGth_xnSA3DS9Dh0G6ZE_XXVjj8dUtk.jpg?auto=webp&s=e2d45a6d7e4e84abd2beb93967c83e812534ac7a">
+					<div class="container-fluid px-3 pt-3">
+						<b class="card-title">The Avengers</b>
+						<b class="card-title float-right item-price">$1,518,812,988</b>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<small class="card-text">Superhero</small>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<button type="button" onclick="window.location.href='add-to-fav-login.html'" class="btn add-to-cart float-right"><i class="material-icons add-to-cart-icon">favorite_border</i>  Add to favorites</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+				<div class="card">
+					<img class="card-img-top" src="https://media4.s-nbcnews.com/i/newscms/2017_17/1210999/titanic-fan-theory-today-170428-tease1_6c9b1e86d299f7fb93b6c4b64c0b0b7c.jpg">
+					<div class="container-fluid px-3 pt-3">
+						<b class="card-title">Titanic</b>
+						<b class="card-title float-right item-price">$2,187,463,944</b>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<small class="card-text">Romance</small>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<button type="button" onclick="window.location.href='add-to-fav-login.html'" class="btn add-to-cart float-right"><i class="material-icons add-to-cart-icon">favorite_border</i>  Add to favorites</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+				<div class="card">
+					<img class="card-img-top" src="https://miro.medium.com/max/3840/1*ROyuehYVsxKmf2KYXWb_Aw.jpeg">
+					<div class="container-fluid px-3 pt-3">
+						<b class="card-title">Jurrasic World</b>
+						<b class="card-title float-right item-price">$1,671,713,208</b>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<small class="card-text">Science Fiction</small>
+						<small class="card-text free-delivery float-right"><i class="material-icons free-del-truck">play_circle_filled</i><span class="badge free-del-badge">TEASER</span></small>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<button type="button" onclick="window.location.href='add-to-fav-login.html'" class="btn add-to-cart float-right"><i class="material-icons add-to-cart-icon">favorite_border</i>  Add to favorites</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+				<div class="card">
+					<img class="card-img-top" src="https://i.pinimg.com/originals/bd/60/66/bd6066ad99ecad37690a7bd72b758adc.jpg">
+					<div class="container-fluid px-3 pt-3">
+						<b class="card-title">Endgame</b>
+						<b class="card-title float-right item-price">$2,750,760,348</b>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<small class="card-text">Superhero</small>
+						<small class="card-text free-delivery float-right"><i class="material-icons free-del-truck">play_circle_filled</i><span class="badge free-del-badge">TEASER</span></small>
+					</div>
+					<div class="container-fluid px-3 pb-3">
+						<button type="button" onclick="window.location.href='add-to-fav-login.html'" class="btn add-to-cart float-right"><i class="material-icons add-to-cart-icon">favorite_border</i>  Add to favorites</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="sticky-footer" class="footer py-3">
+		<div class="container-fluid">
+			Copyright &copy; 2019
+		</div>
+	</footer>
+</body>
+</html>
